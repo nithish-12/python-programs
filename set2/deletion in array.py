@@ -1,0 +1,5 @@
+arr=list(map(int,input("enter the elements in array").strip().split()))
+print("the array is" ,arr)
+key=int(input("enter the eleemnt to deelete"))
+arr.remove(key)
+print("after deletion",arr)

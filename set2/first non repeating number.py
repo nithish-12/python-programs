@@ -1,0 +1,14 @@
+from collections import defaultdict
+
+
+def first_non_repeat(arr,n):
+    mp=defaultdict(lambda:0)
+    for i in range(n):
+        mp[arr[i]]+=1
+    for i in range(n):
+        if mp[arr[i]]==1:
+            return arr[i]
+    return -1
+arr=list(map(int,input("enter rhe array ").strip().split()))
+n=len(arr)
+print(first_non_repeat(arr,n))
