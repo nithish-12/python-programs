@@ -1,5 +1,5 @@
 al=input("")
-if (al>='a' and al<='z') or (al>='A' and al<='B'):
+if (al>='a' and al<='z') or (al>='A' and al<='Z'):
     print(al,"is alphabet")
 else:
     print(al,"is not alphabet")
